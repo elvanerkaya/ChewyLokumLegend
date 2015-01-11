@@ -135,9 +135,7 @@ public class gameEngine extends JFrame implements MouseListener{
 		startMenu.add(constructTopMenu());
 
 		/**
-		 * Default constructor of gameEngine.
-		 * 
-		 * 
+		 * Default constructor of gameEngine
 		 */
 	}
 	/**
@@ -581,6 +579,7 @@ public class gameEngine extends JFrame implements MouseListener{
 		if(level.isTimeBased()) updateTime(board.getTime());
 	}
 	/**
+	 * @requires score
 	 * This method check for whether the level in finished or ongoing. It checks whether the level is succeeded, failed, time finished and it also checks whether special swaps are finished or not.
 	 * @modifies timer, gameTimer, frame
 	 * @effects If required score is reached, it stops the timer and print level succeed.
